@@ -1,0 +1,104 @@
+/**
+ *  Do not remove the comments below. It's the markers used by wiredep to inject
+ *  less dependencies when defined in the bower.json of your dependencies
+ */
+// bower:less
+// endbower
+
+/**
+ *  If you want to override some bootstrap variables, you have to change values here.
+ *  The list of variables are listed here bower_components/bootstrap/less/variables.less
+ */
+@navbar-inverse-link-color: #5AADBB;
+@icon-font-path: '../../bower_components/bootstrap/fonts/';
+
+.container{
+  text-align:center;
+  .gallery-wrapper{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin-top:10px;
+.fade-transition{
+  position:absolute;
+  width: 100%;
+}
+  }
+  .img-gallery{
+    height:400px;
+    width:auto;
+
+  }
+  .btn-gallery{
+    width: 150px;
+    margin-top: 10px;
+  }
+}
+.thumbnails{
+  width:100%;
+  text-align:center;
+  float:left;
+  margin-top:10px;
+.thumbnail-wrapper{
+  display: inline-block;
+
+  .thumbnail{
+    width: 50px;
+    height: 50px;
+    background-size: 100% auto;
+    margin-right:10px;
+    cursor:pointer;
+  }
+}
+
+}
+
+.fade-transition.ng-hide {
+  opacity: 0;
+}
+
+.fade-transition.ng-hide-remove,
+.fade-transition.ng-hide-add {
+  display: block !important;
+}
+
+.fade-transition.ng-hide-remove {
+  transition: all linear 1000ms;
+}
+
+.fade-transition.ng-hide-add {
+  transition: all linear 500ms;
+}
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+
+.slide.ng-enter,
+.slide.ng-leave {
+  transition: all 1s;
+  z-index: 1;
+}
+
+.slide.ng-enter {
+  left: 100%;
+  opacity: 0;
+}
+.slide.ng-enter.ng-enter-active,
+.slide.ng-leave {
+  left: 0;
+  opacity: 1;
+}
+.slide.ng-leave.ng-leave-active {
+  left: -100%;
+  opacity: 0;
+}
+
+/**
+ *  Do not remove the comments below. It's the markers used by gulp-inject to inject
+ *  all your less files automatically
+ */
+// injector
+// endinjector

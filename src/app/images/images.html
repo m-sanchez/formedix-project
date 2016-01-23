@@ -1,0 +1,17 @@
+<h1>Images</h1>
+<span>For code: {{images.imageCode}}</span>
+
+<div class="gallery-wrapper">
+  <div ng-repeat="image in images.urls" ng-show="images.index==$index" class="fade-transition">
+
+    <img class="img-gallery" ng-src="{{image}}" alt="" on-error-src="/assets/images/notfound.png"/>
+  </div>
+</div>
+<div class="thumbnails">
+  <div ng-repeat="image in images.urls"  class="thumbnail-wrapper">
+    <div class="thumbnail" style="background-image:url({{image}})" ng-click="images.changeImage($index)"></div>
+  </div>
+</div>
+<button type="button" class="btn btn-primary btn-gallery" ng-click="images.changeImage(images.index-1)">Previous</button>
+<button type="button" class="btn btn-primary btn-gallery" ng-click="images.changeImage(images.index+1)">Next</button>
+
